@@ -24,18 +24,16 @@ Este proyecto incluye dos plantillas XSLT para transformar una factura en format
 ## Estructura del Proyecto
 ```
 /
+├── README.md             # Documentación
 ├── factura.xml           # Archivo XML de la factura
+├── factura1.png          # Captura de pantalla
+├── factura2.png          # Captura de pantalla
+├── formato1.png          # Captura XSLT
 ├── formato1.xslt         # Plantilla XSLT
+├── formato2.png          # Captura XSLT
 ├── formato2.xslt         # Plantilla XSLT
 ├── resultado1.html       # Salida generada en HTML
 ├── resultado2.html       # Salida generada en HTML
-├── README.md             # Documentación
 ```
-
-## Enlaces a los archivos
-- [Factura XML](ruta-al-archivo-xml)
-- [Plantilla XSLT](ruta-al-archivo-xslt)
-- [Salida HTML](ruta-al-archivo-html)
-
 
 
