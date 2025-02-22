@@ -13,13 +13,13 @@ Este proyecto incluye dos plantillas XSLT para transformar una factura en format
 ![XSLT Code](formato1.png)
 
 ### Factura renderizada en HTML
-![Factura HTML](html1.png)
+![Factura HTML](factura1.png)
 
 ### Código XSLT 2
 ![XSLT Code](formato2.png)
 
 ### Factura renderizada en HTML
-![Factura HTML](html2.png)
+![Factura HTML](factura2.png)
 
 ## Estructura del Proyecto
 ```
