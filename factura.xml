@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="formato1.xslt"?>
+<Facturae xmlns="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml" version="3.2.2">
+  <Factura>
+    <!-- Datos de la factura -->
+    <DatosFactura>
+      <NumeroFactura>F12345</NumeroFactura>
+      <FechaExpedicion>2025-02-22</FechaExpedicion>
+      <FechaVencimiento>2025-03-22</FechaVencimiento>
+      <TipoFactura>Factura</TipoFactura>
+    </DatosFactura>
+
+    <!-- Datos del emisor -->
+    <Emisor>
+      <RazonSocial>Mi Empresa S.L.</RazonSocial>
+      <NIF>ESB12345678</NIF>
+      <Direccion>
+        <Calle>Calle Falsa, 123</Calle>
+        <Ciudad>Madrid</Ciudad>
+        <CodigoPostal>28080</CodigoPostal>
+        <Provincia>Madrid</Provincia>
+        <Pais>España</Pais>
+      </Direccion>
+    </Emisor>
+
+    <!-- Datos del receptor -->
+    <Receptor>
+      <RazonSocial>Cliente Ejemplo</RazonSocial>
+      <NIF>ESX12345678</NIF>
+      <Direccion>
+        <Calle>Avenida Real, 456</Calle>
+        <Ciudad>Barcelona</Ciudad>
+        <CodigoPostal>08080</CodigoPostal>
+        <Provincia>Cataluña</Provincia>
+        <Pais>España</Pais>
+      </Direccion>
+    </Receptor>
+
+    <!-- Detalle de los productos o servicios -->
+    <LineaFactura>
+      <Descripcion>Consultoría de TI</Descripcion>
+      <Cantidad>1</Cantidad>
+      <PrecioUnitario>500.00</PrecioUnitario>
+      <Total>500.00</Total>
+      <IVA>21</IVA>
+    </LineaFactura>
+    
+    <LineaFactura>
+      <Descripcion>Desarrollo Web</Descripcion>
+      <Cantidad>1</Cantidad>
+      <PrecioUnitario>750.00</PrecioUnitario>
+      <Total>750.00</Total>
+      <IVA>21</IVA>
+    </LineaFactura>
+
+    <!-- Totales de la factura -->
+    <Totales>
+      <BaseImponible>1250.00</BaseImponible>
+      <IVA>262.50</IVA>
+      <TotalFactura>1512.50</TotalFactura>
+    </Totales>
+  </Factura>
+</Facturae>

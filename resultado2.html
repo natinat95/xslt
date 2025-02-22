@@ -1,0 +1,142 @@
+<html xmlns:ns="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
+      lang="es">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Factura</title>
+      <style>
+          body {
+            font-family: 'Poppins', sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+            color: #343a40;
+          }
+          h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+          }
+          .factura-container {
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+          }
+          .section-title {
+            font-size: 1.3em;
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-weight: bold;
+          }
+          .factura-details, .address {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+          .factura-details div, .address div {
+            flex: 1;
+          }
+          .factura-details p, .address p {
+            font-size: 1em;
+            margin: 5px 0;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+          }
+          table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+          }
+          table th {
+            background-color: #f1f1f1;
+            color: #333;
+          }
+          .totales {
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: right;
+          }
+          .totales p {
+            margin: 5px 0;
+          }
+          .totales .total {
+            color: #d32f2f;
+            font-size: 1.3em;
+          }
+        </style>
+   </head>
+   <body>
+      <h1>Factura</h1>
+      <div class="factura-container">
+         <div class="factura-details">
+            <div>
+               <p>
+                  <strong>Número:</strong>F12345</p>
+               <p>
+                  <strong>Fecha:</strong>2025-02-22</p>
+               <p>
+                  <strong>Vencimiento:</strong>2025-03-22</p>
+            </div>
+            <div>
+               <p>
+                  <strong>Emisor:</strong>Mi Empresa S.L.</p>
+               <p>
+                  <strong>NIF:</strong>ESB12345678</p>
+            </div>
+         </div>
+         <div class="address">
+            <div>
+               <h3 class="section-title">Dirección del Emisor</h3>
+               <p>
+                  <strong>Calle:</strong>Calle Falsa, 123</p>
+               <p>
+                  <strong>Ciudad:</strong>Madrid</p>
+               <p>
+                  <strong>Código Postal:</strong>28080</p>
+               <p>
+                  <strong>Provincia:</strong>Madrid</p>
+               <p>
+                  <strong>País:</strong>España</p>
+            </div>
+         </div>
+         <h3 class="section-title">Detalle de Productos/Servicios</h3>
+         <table>
+            <tr>
+               <th>Descripción</th>
+               <th>Cantidad</th>
+               <th>Precio Unitario</th>
+               <th>IVA</th>
+               <th>Total</th>
+            </tr>
+            <tr>
+               <td>Consultoría de TI</td>
+               <td>1</td>
+               <td>500.00€</td>
+               <td>21%</td>
+               <td>500.00€</td>
+            </tr>
+            <tr>
+               <td>Desarrollo Web</td>
+               <td>1</td>
+               <td>750.00€</td>
+               <td>21%</td>
+               <td>750.00€</td>
+            </tr>
+         </table>
+         <div class="totales">
+            <p>
+               <strong>Base Imponible:</strong>1250.00€</p>
+            <p>
+               <strong>IVA:</strong>21€</p>
+            <p class="total">
+               <strong>Total:</strong>1512.50€</p>
+         </div>
+      </div>
+   </body>
+</html>
